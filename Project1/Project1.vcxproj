@@ -104,13 +104,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GLEW_STATIC;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)../lib/glm;$(ProjectDir)../lib/glew-1.13.0/include;$(ProjectDir)../lib/glfw-3.1.2.bin.WIN32/include/GLFW;$(ProjectDir)../lib/irrklang;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)../lib/glm;$(ProjectDir)../lib/glew-1.13.0/include;$(ProjectDir)../lib/glfw-3.1.2.bin.WIN32/include/GLFW;$(ProjectDir)../lib/irrklang;$(ProjectDir)../lib/box2d/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProjectDir)../lib/glfw-3.1.2.bin.WIN32/lib-vc2015;$(ProjectDir)../lib/glew-1.13.0/lib/Release/Win32;$(ProjectDir)../lib/irrklang;$(ProjectDir)../lib/SOIL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;SOIL.lib;irrklang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)../lib/glfw-3.1.2.bin.WIN32/lib-vc2015;$(ProjectDir)../lib/glew-1.13.0/lib/Release/Win32;$(ProjectDir)../lib/irrklang;$(ProjectDir)../lib/SOIL;$(ProjectDir)../lib/box2d/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;SOIL.lib;irrklang.lib;box2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
